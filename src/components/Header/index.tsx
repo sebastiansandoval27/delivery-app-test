@@ -9,7 +9,7 @@ import { AiOutlineUser, AiOutlineSearch } from "react-icons/ai";
 
 export const Header = () => {
   return (
-    <HeaderStyled primary={true}>
+    <HeaderStyled>
       <HeaderLogo>
         <HiOutlineMenuAlt4 />
         <h3>Chukwudi</h3>
