@@ -2,7 +2,11 @@ import tw from "twin.macro";
 import styled from "styled-components";
 
 export const ItemCartComp = styled.div`
-  ${tw`w-full h-20 flex items-center justify-between text-c-black font-OpenSans p-2 relative`}
+  ${tw`w-full h-20 flex items-center justify-between text-c-black font-OpenSans p-2 relative cursor-pointer`}
+  transition: all 0.3s ease;
+  &:hover {
+    ${tw`bg-c-orange bg-opacity-30 rounded-lg`}
+  }
   & > div.img {
     ${tw`w-20 h-full rounded-xl flex justify-center items-center`}
   }

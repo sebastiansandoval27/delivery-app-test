@@ -3,19 +3,7 @@ import { Cart } from "../models/Cart";
 import { Product } from "../models/Product";
 
 const initialState = {
-  products: [
-    {
-      product: {
-        id: 0,
-        image: "",
-        name: "",
-        price: 0,
-        qualification: "0",
-        time: "0",
-      },
-      quantity: 0,
-    },
-  ],
+  products: [] as Cart[],
   total: 0,
 };
 
@@ -59,8 +47,12 @@ export const cartSlice = createSlice({
       );
 
       if (existingIndex !== -1) {
+        state.total -= state.products[existingIndex].product.price;
         state.products[existingIndex].quantity = action.payload.quantity;
-        state.total = action.payload.total;
+        let totalPrice = state.products.reduce(function (accumulator, item) {
+          return accumulator + item.product.price * item.quantity;
+        }, 0);
+        state.total = totalPrice;
       }
     },
   },

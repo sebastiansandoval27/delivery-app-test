@@ -122,3 +122,11 @@ export const OrderButtons = styled.div`
     }
   }
 `;
+
+export const MenuUser = styled.div`
+  ${tw`w-auto h-auto bg-c-purple p-2 mx-auto absolute rounded-lg top-20 right-10 z-50 transition-all`}
+  z-index: 1000;
+  & > button {
+    ${tw`w-full h-auto text-c-white font-OpenSans font-bold p-3`}
+  }
+`;
