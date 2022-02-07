@@ -41,8 +41,11 @@ export const Slider: React.FC<SliderProps> = ({
         },
       }}
     >
-      {items.map((item: any) => (
-        <SwiperSlide className="flex justify-center items-center text-center">
+      {items.map((item: any, index) => (
+        <SwiperSlide
+          key={`Slider-${index}`}
+          className="flex justify-center items-center text-center"
+        >
           {item}
         </SwiperSlide>
       ))}

@@ -7,11 +7,19 @@ import {
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { AiOutlineUser, AiOutlineSearch } from "react-icons/ai";
 
-export const Header = () => {
+interface HeaderProps {
+  isOpen: boolean;
+  setIsOpen: (isOpen: boolean) => void;
+}
+
+export const Header: React.FC<HeaderProps> = ({
+  isOpen,
+  setIsOpen,
+}: HeaderProps): JSX.Element => {
   return (
     <HeaderStyled>
       <HeaderLogo>
-        <HiOutlineMenuAlt4 />
+        <HiOutlineMenuAlt4 onClick={() => setIsOpen(!isOpen)} />
         <h3>Chukwudi</h3>
       </HeaderLogo>
       <HeaderSearch>

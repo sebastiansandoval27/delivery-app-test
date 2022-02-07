@@ -5,3 +5,5 @@ export * from "./CardAction/index";
 export * from "./Slider/FoodItem/index";
 export * from "./Slider/index";
 export * from "./ProductItem";
+export * from "./Cart/ItemCart/index";
+export * from "./Cart/index";

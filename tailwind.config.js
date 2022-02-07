@@ -30,8 +30,10 @@ module.exports = {
       ...defaultColors,
       ...{
         "c-purple": "#503E9D",
+        "c-purple-light": "#8800FF",
         "c-yellow": "#FCD661",
         "c-orange": "#FB6D3B",
+        "c-orange-dark": "#E35624",
         "c-pink-light": "#FEF7EC",
         "c-pink-dark": "#d2ac97",
         "c-grey-light": "#F8F8F8",

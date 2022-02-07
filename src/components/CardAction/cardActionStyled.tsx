@@ -2,7 +2,7 @@ import tw from "twin.macro";
 import styled from "styled-components";
 
 export const CardActionComp = styled.section`
-  ${tw`w-11/12 h-auto bg-c-pink-light grid justify-center items-center pt-3 px-1 rounded-xl sm:h-60 sm:mt-10`}
+  ${tw`w-11/12 h-auto bg-c-pink-light grid justify-between items-center pt-3 px-1 rounded-xl sm:h-60 sm:mt-10`}
   grid-template-areas:
     "text"
     "button"
@@ -44,7 +44,7 @@ export const CardActionText = styled.div`
 `;
 
 export const CardActionButton = styled.button`
-  ${tw`w-full h-5 flex justify-center items-center px-5 mt-3 lg:h-full lg:items-end lg:pb-4`}
+  ${tw`w-full h-5 flex justify-center items-center px-5 mt-3 lg:h-full lg:items-end lg:pb-4 cursor-pointer`}
 
   & > h3 {
     ${tw` font-OpenSans flex justify-center items-center h-full text-c-orange font-bold text-lg lg:h-auto xl:text-xl`}

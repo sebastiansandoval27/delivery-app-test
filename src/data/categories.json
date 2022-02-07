@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "All",
+    "icon": "https://cdn-icons-png.flaticon.com/512/1046/1046874.png"
+  },
+  {
+    "id": 2,
+    "name": "Pizza",
+    "icon": "https://cdn-icons-png.flaticon.com/512/1161/1161674.png"
+  },
+  {
+    "id": 3,
+    "name": "Asian",
+    "icon": "https://cdn-icons.flaticon.com/png/512/1755/premium/1755238.png?token=exp=1644176403~hmac=3ccc7e24b86a16e97767b39f5486e108"
+  },
+  {
+    "id": 4,
+    "name": "Burgers",
+    "icon": "https://cdn-icons.flaticon.com/png/512/1332/premium/1332219.png?token=exp=1644176453~hmac=4cd7f70fde368a3b4aed2b1237269a3d"
+  },
+  {
+    "id": 5,
+    "name": "Barbecue",
+    "icon": "https://cdn-icons.flaticon.com/png/512/869/premium/869727.png?token=exp=1644176521~hmac=e25bf0badbef247364216918e21bcbd5"
+  },
+  {
+    "id": 6,
+    "name": "Dessers",
+    "icon": "https://cdn-icons.flaticon.com/png/512/3173/premium/3173413.png?token=exp=1644176556~hmac=ff77858c1a4a93cba25535c04105fe79"
+  },
+  {
+    "id": 7,
+    "name": "Thai",
+    "icon": "https://cdn-icons-png.flaticon.com/512/6742/6742615.png"
+  },
+  {
+    "id": 8,
+    "name": "Sushi",
+    "icon": "https://cdn-icons.flaticon.com/png/512/2252/premium/2252071.png?token=exp=1644176609~hmac=dcf7ee2ac84d16e6e839d04abedaf18c"
+  }
+]

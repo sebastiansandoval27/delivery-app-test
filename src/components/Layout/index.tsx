@@ -1,13 +1,23 @@
-import { Header, Footer } from "components";
+import { Header, Footer, Cart } from "components";
+import { useState } from "react";
+import { useSelector } from "react-redux";
+import { RootState } from "store";
 
 export const Layout = (props) => {
+  const cart = useSelector((state: RootState) => state.cart);
+
+  const [openOrder, setOpenOrder] = useState(false);
+
   return (
-    <div className=" w-full flex flex-col items-center justify-start px-0 md:px-5 lg:px-7 xl:w-5/6">
-      <Header />
-      <div className="w-full xl:w-10/12 flex flex-col items-center justify-start pb-5">
-        {props.children}
+    <div className="w-full flex items-start justify-start overflow-hidden">
+      <div className="w-full flex flex-col items-center justify-center xl:w-9/12 overflow-hidden">
+        <Header isOpen={openOrder} setIsOpen={setOpenOrder} />
+        <div className="w-full flex flex-col items-center justify-center pb-5 xl:w-11/12">
+          {props.children}
+        </div>
+        <Footer />
       </div>
-      <Footer />
+      <Cart openOrder={openOrder} setOpenOrder={setOpenOrder} items={cart} />
     </div>
   );
 };
